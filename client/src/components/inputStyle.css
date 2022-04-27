@@ -1,0 +1,36 @@
+
+.input_container{
+    width: 30rem;
+    margin: 5rem auto;
+    text-align: center;
+    height: auto;
+    padding: 1rem 1.2rem;
+    border: 0.3rem solid #25A3B5;
+}
+
+.input_div{
+    width: 100%;
+    /* min-height: 5vh; */
+    /* border: 2px solid black; */
+    margin-bottom: 1rem;
+}
+
+.input_div input,select{
+    width: 80%;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 0.2rem solid #757575;
+}
+
+
+.check_btn{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 3rem;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    background-image: -webkit-linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
+
+}

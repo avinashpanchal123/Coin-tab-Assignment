@@ -1,9 +1,10 @@
 import React from 'react'
+import UserInputs from './components/UserInputs'
 
 const App = ()=> {
   return (
     <>
-    <h1>Hello I am app</h1>
+    <UserInputs/>
     </>
   )
 }
