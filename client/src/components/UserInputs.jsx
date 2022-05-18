@@ -69,19 +69,28 @@ const UserInputs = () => {
 
   const handleCheck = (e)=>{
     e.preventDefault();
+    // getAddress(deliveryInfo.pincode);
+   if( weight == "" || pincode == "" || delType == ""){
+     alert("Please Fill all the Required Details")
+   }
+   else if(pincode.length != 6){
+     alert("Please Enter Valid Pin")
+   }
+   else{
     getAddress(deliveryInfo.pincode);
-    setDeliveryInfo(initState)
+   }
+     setDeliveryInfo(initState)
   }
 
   const getAddress =(pin)=>{
      axios.get(
-        `http://localhost:2233/addresses?pin=${pin}`
+        `https://cointab-server.herokuapp.com/addresses?pin=${pin}`
     ).then((response) => {
         let data = response.data[0];
         showOutput(data.zone)
       })
       .catch((e)=>{
-          alert(e)
+          alert("Picode Not Found")
       })
   
   
